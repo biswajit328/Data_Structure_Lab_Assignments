@@ -25,6 +25,6 @@ void lis_show(Node* adj[],int v){
             cout<<temp->val<<"->";
             temp=temp->next;
         }
-        cout<<"NULL"<<endl;  
+        cout<<"NULL."<<endl;  
     }
 }
