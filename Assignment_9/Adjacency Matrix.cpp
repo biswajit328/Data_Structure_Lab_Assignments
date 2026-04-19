@@ -6,6 +6,7 @@ void adjacency_matrix(int v,int e){
     }
     for(int i=0;i<v;i++){
         for(int j=0;j<v;j++){
+
             p[i][j]=0;
         }
     }
@@ -17,9 +18,9 @@ void adjacency_matrix(int v,int e){
     }
     for(int i=0;i<e;i++){
         int a,b;
-        cout<<"Enter first vertex:";
+        cout<<"Enter first vertex: ";
         cin>>a;
-        cout<<"Enter second vertex:";
+        cout<<"Enter second vertex: ";
         cin>>b;
         p[a][b]++;
         p[b][a]++;
