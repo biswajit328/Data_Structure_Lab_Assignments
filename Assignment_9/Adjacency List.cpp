@@ -4,9 +4,9 @@ void adjacency_list(Node* adj[],int v,int e){
         }
     for(int i=0;i<e;i++){
         int a,b;
-        cout<<"Enter first vertex:";
+        cout<<"Enter first vertex: ";
         cin>>a;
-        cout<<"Enter second vertex:";
+        cout<<"Enter second vertex: ";
         cin>>b;
         
         Node* temp=new Node(b);
@@ -16,10 +16,7 @@ void adjacency_list(Node* adj[],int v,int e){
         Node* temp2=new Node(a);
         temp2->next=adj[b]->next;
         adj[b]->next=temp2;
-
-        
     }
-    
 }
 void lis_show(Node* adj[],int v){
     for(int i=0;i<v;i++){
@@ -28,7 +25,6 @@ void lis_show(Node* adj[],int v){
             cout<<temp->val<<"->";
             temp=temp->next;
         }
-        cout<<"NULL"<<endl;
-        
+        cout<<"NULL"<<endl;  
     }
 }
