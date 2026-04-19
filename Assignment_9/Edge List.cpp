@@ -7,8 +7,8 @@ void edge_list(Node* edg[],int e){
         cin>>b;
         edg[i]=new Node(a);
         Node* temp=new Node(b);
+
         edg[i]->next=temp;
-        
     }
 
 
